@@ -21,24 +21,28 @@ namespace WPF_CSharp_DZ
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(x.Text) || string.IsNullOrWhiteSpace(y.Text))
+            if (string.IsNullOrWhiteSpace(valueTBox.Text))
             {
-                MessageBox.Show("Поле не заполнено");
-                result.Text = "";
-                return;
-            }
-
-            if (double.TryParse(x.Text, out var xNumber) &&
-                double.TryParse(y.Text, out var yNumber))
-            {
-                result.Text = (xNumber + yNumber).ToString();
+                MessageBox.Show("Текстовое поле не заполнено");
             }
             else
             {
-                MessageBox.Show("Некорректный ввод");
-                result.Text = "";
+                usersList.Items.Add(valueTBox.Text);
+                valueTBox.Text = string.Empty;
+            }
+        }
+
+        private void BDelete_Click(object sender, RoutedEventArgs e)
+        {
+            if (usersList.SelectedItem != null)
+            {
+                usersList.Items.Remove(usersList.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Элемент для удаления не выбран");
             }
         }
     }
