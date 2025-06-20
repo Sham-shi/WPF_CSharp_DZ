@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{0635FD9C-7BBD-4136-BB1C-671372BE6302}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DZ_28_05_25", "DZ_28_05_25", "{E68C9B34-60DE-4D67-9363-7B13CC8BD8D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frames", "Frames\Frames.csproj", "{915339B7-823C-479F-8629-ADBAFCBA9543}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{0635FD9C-7BBD-4136-BB1C-671372BE6302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0635FD9C-7BBD-4136-BB1C-671372BE6302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0635FD9C-7BBD-4136-BB1C-671372BE6302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915339B7-823C-479F-8629-ADBAFCBA9543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915339B7-823C-479F-8629-ADBAFCBA9543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915339B7-823C-479F-8629-ADBAFCBA9543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915339B7-823C-479F-8629-ADBAFCBA9543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CF3E8227-207F-46AE-85DD-158B49688535} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{0635FD9C-7BBD-4136-BB1C-671372BE6302} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{915339B7-823C-479F-8629-ADBAFCBA9543} = {E68C9B34-60DE-4D67-9363-7B13CC8BD8D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F3C2768-1522-478C-89E1-B8F832BF3AC4}
