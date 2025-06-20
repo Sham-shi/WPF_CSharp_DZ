@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="Task2.Question2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Task2"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Question2"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="10">
+        <TextBlock Margin="0,0,0,10" Text="2. Какие из этих типов относятся к ссылочным (reference types) в C#?" />
+
+        <CheckBox Name="q2Answer1" Content="int" />
+        <CheckBox
+            Name="q2Answer2"
+            Margin="0,5,0,5"
+            Content="struct" />
+        <CheckBox Name="q2Answer3" Content="string" />
+        <CheckBox
+            Name="q2Answer4"
+            Margin="0,5,0,0"
+            Content="class" />
+
+        <Button
+            Name="futherButton"
+            Width="120"
+            Height="30"
+            Margin="0,100,0,0"
+            Click="FutherButton_Click"
+            Content="Далее" />
+    </StackPanel>
+</Window>

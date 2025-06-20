@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="Task2.Question3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Task2"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Question3"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="10">
+        <TextBlock Margin="0,0,0,10" Text="3. Какой модификатор доступа позволяет обращаться к члену класса из любого места программы?" />
+
+        <RadioButton Name="q3Answer1" Content="private" />
+        <RadioButton
+            Name="q3Answer2"
+            Margin="0,5,0,5"
+            Content="protected" />
+        <RadioButton Name="q3Answer3" Content="internal" />
+        <RadioButton
+            Name="q3Answer4"
+            Margin="0,5,0,0"
+            Content="public" />
+
+        <Button
+            Name="futherButton"
+            Width="120"
+            Height="30"
+            Margin="0,100,0,0"
+            Click="FutherButton_Click"
+            Content="Далее" />
+    </StackPanel>
+</Window>
