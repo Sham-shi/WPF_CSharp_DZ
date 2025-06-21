@@ -1,0 +1,93 @@
+[
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": true
+  },
+  {
+    "Name": "Убраться",
+    "IsComplete": true
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  },
+  {
+    "Name": "Убраться",
+    "IsComplete": true
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  },
+  {
+    "Name": "Убраться",
+    "IsComplete": false
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  },
+  {
+    "Name": "Убраться",
+    "IsComplete": false
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": false
+  }
+][
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": false
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": true
+  },
+  {
+    "Name": "Bye-bye",
+    "IsComplete": false
+  }
+]
