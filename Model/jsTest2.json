@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "Сделать дз по WPF",
+    "IsComplete": true
+  },
+  {
+    "Name": "Пройти курс по C#",
+    "IsComplete": true
+  },
+  {
+    "Name": "bye-bye",
+    "IsComplete": false
+  }
+]

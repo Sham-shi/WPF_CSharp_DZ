@@ -38,25 +38,22 @@ public class ToDoViewModel : INotifyPropertyChanged
         ];
 
         AddTaskCommand = new(AddTask);
-        ToggleTaskCompletionCommand = new(ToggleTaskCompletion);
-        SaveTasksToFileCommand = new(SaveTasksToFile);
+        //ToggleTaskCompletionCommand = new(ToggleTaskCompletion);
     }
-
-    public RelayCommand SaveTasksToFileCommand { get; set; }
-    public RelayCommand ToggleTaskCompletionCommand { get; set; }
+    //public RelayCommand ToggleTaskCompletionCommand { get; set; }
     public RelayCommand AddTaskCommand { get; set; }
 
-    public void ToggleTaskCompletion(object? parameter)
-    {
-        if (parameter is TaskViewModel taskViewModel)
-        {
-            taskViewModel.IsComplete = !taskViewModel.IsComplete;
-        }
-    }
+    //private void ToggleTaskCompletion(object? parameter)
+    //{
+    //    if (parameter is TaskViewModel taskViewModel)
+    //    {
+    //        taskViewModel.IsComplete = !taskViewModel.IsComplete;
+    //    }
+    //}
 
-    public void SaveTasksToFile(object? parameter)
+    public void SaveTasksToFile(string filePath)
     {
-        var filePath = "C:\\Users\\Shalim\\source\\repos\\WPF_CSharp_DZ\\Model\\jsTasks.json";
+        //var filePath = "C:\\Users\\Shalim\\source\\repos\\WPF_CSharp_DZ\\Model\\jsTasks.json";
 
         var tasksModel = new List<TaskModel>();
 
@@ -76,7 +73,19 @@ public class ToDoViewModel : INotifyPropertyChanged
 
     public void LoadTaskFromFile(string filePath)
     {
-        new TaskManager().Read(filePath);
+        var tasksModel = new TaskManager().Read(filePath);
+
+        Tasks.Clear();
+        foreach (var task in tasksModel)
+        {
+            var taskViewModel = new TaskViewModel()
+            {
+                Name= task.Name,
+                IsComplete = task.IsComplete
+            };
+
+            Tasks.Add(taskViewModel);
+        }
     }
 
     private void AddTask(object? parameter)

@@ -22,9 +22,9 @@
                     <StackPanel Orientation="Horizontal">
                         <CheckBox
                             Margin="5"
-                            Command="{Binding DataContext.ToggleTaskCompletionCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
                             CommandParameter="{Binding}"
                             IsChecked="{Binding IsComplete, Mode=TwoWay}" />
+                        <!--Command="{Binding DataContext.ToggleTaskCompletionCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"-->
 
                         <TextBlock
                             Width="300"
@@ -36,15 +36,33 @@
         </ListBox>
 
         <StackPanel Grid.Row="1">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Margin="10 10 10 0">
                 <Label Content="Название" />
                 <TextBox
                     Width="350"
                     Height="40"
                     Text="{Binding TextTask}" />
             </StackPanel>
-            <Button Command="{Binding AddTaskCommand}" Content="Добавить" />
-            <Button Command="{Binding SaveTasksToFileCommand}" Content="Посмотреть" />
+
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button
+                    Width="140"
+                    Height="30"
+                    Command="{Binding AddTaskCommand}"
+                    Content="Добавить" />
+                <Button
+                    Width="140"
+                    Height="30"
+                    Margin="300 0 0 0"
+                    Click="SaveButton_Click"
+                    Content="Сохранить" />
+                <Button
+                    Width="140"
+                    Height="30"
+                    Margin="10 0 0 0"
+                    Click="LoadButton_Click"
+                    Content="Зазгрузить" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

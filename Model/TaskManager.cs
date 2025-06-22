@@ -15,7 +15,7 @@ public class TaskManager
         };
         var jsonTasks = JsonSerializer.Serialize(tasks, jsonSerializerOptions);
 
-        File.AppendAllText(filePath, jsonTasks);
+        File.WriteAllText(filePath, jsonTasks);
     }
 
     public List<TaskModel> Read(string filePath)
